@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Wooster - Vintage Single Page PSD Theme</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    </header>
+
+    <body>
+
+            <!--------------------Side Bar---------------------->
+        
+            <div id="side-div" class="side-div hide">
+                <div class="logo">
+                     <button id="hide-nav" onclick="hideNav()">X</button>
+                     <img src="img/black-Icon.png" alt="Logo">
+                </div>
+                <div class="links">    
+                    <ul>
+                        <li><a href="#main">Top<a></li>  
+                        <li><a href="#container clear">Our begining</a></li> 
+                        <li><a href="#main-video">Our Video</a></li>
+                        <li><a href="#main-portfolio">Portfolio</a></li>
+                        <li><a href="#about-us">About Us</a></li> 
+                        <li><a href="#text-cont">Subscribe</a></li>  
+                        <li><a href="#contact-us">Contact Us</a></li>
+                        <li><a href="#footer">Social-media links</a></li>
+                    </ul>
+                </div>
+            </div> 
+
+            <!------------ Nav bar--------->
+            <div id="navigation" class="navigation">
+                <div id="container" class="container">
+                    <div id="navbar" class="navbar">
+                        <a href="index.html"><img src="img/Logo1.png" alt="Logo" class="header-logo"></a>
+                        <!----------Bt-left and Div bar---------->
+                            
+                        <div class="slid-but">
+                            <button onclick="showNav()" id="show-nav"> <img src="img/Slide bar.png" alt="dropdown-logo"></button>
+                        </div>
+                    </div>          
+                </div> 
+            </div> 
+            
+            <!----------Main------------->
+            <div id="main" class="main">  
+                <div class="first-part">  
+                    <div class="container">
+                        <div class="main-content">
+                            <p class="first-text"><b>SOME TEXT GOES HERE</b></p>
+                            <p><img src="img/vija.png" alt="vija ndarese" class="top-sep-line"></p>
+                            <h1 class="main-tex">OUR MISSION IS TO MAKE YOUR <br> BUSINESS GROW</h1>
+                            <a href="#"><button class="main-conntent-button mt-4"> START TOUR NOW</button></a>
+
+                            <div class="login">
+                                <form">
+                                    <label>User log-in</label><br>
+                                    <input type="text" id="user" name="login" placeholder="Username *">
+                                    <input type="password" name="login" id="Password" placeholder="Password *"><br>
+                                    <label id="info" style="display: none;font-size: 12.5px;color: red;">Passwordi duhet te permbaje se paku nje shkronje te madhe, nje shkronje te vogel dhe nje numer. Gjatesia 6-20</label><br>
+                                    <input type="submit" name="login" value="SUBMIT" onclick="validateform()">
+                                    
+                                </form>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div> 
+                <!-------First-Divider------->
+                <div class="div-bar">    
+                    <div id="container clear" class="container clear">  
+                        <p class="div-txt">BEST PSD TEMPLATE FOR YOUR WEBSITE.DOWNLOAD NOW</p>
+                        <button class="div-bar-button"><a href="download.html" target="_blank" class="link-click"> <b> DOWNLOAD NOW</b></a></button>
+                    </div>         
+                </div>
+
+                <!-------Main-History---->
+                
+                <div id="main-history" class="main-history">
+                    <div class="container">
+                        <div class="text-side">
+                            <H2>OUR BEGINING</H2>
+                            <P>CLOSER TO THE STARS</P>
+                            <img src="img/Vija e bardh.png" alt="vija 2" class="white-line ">
+                            <div class="pargraphs">
+                                <p>Donec rutrum congue leo eget malsuada. Curabitur non nulla sit amet <br> nisl tempus covallis quis ac lectus. Sed porttitor lectus nibh. Proin <br>eget tortor risus. Nulla porttitor accumsan tincidunt. Nulla porttitor <br> accumsan tincidunt</p>
+                                <p>Curabitur aliquet quam id dui posuere blandit. <br> Nulla quis lorem ut libero malesuada feugiat. Donec rutrum congue leo <br> eget malesuada. Curabitur aliquet quam id dui posuere blandit.</p>
+                            </div>
+                                <button class="mid-cont-button"><a href="#main-portfolio" class="link-click"><strong> SEE PORTFOLIO</strong></a></button>
+                        </div>
+                                <div class="photo-part">
+                                <img src="img/ourBegining1.jpg" alt="photo" id="photo"> 
+                                </div>
+                    </div>
+                </div>    
+                <!--------- vidoe ----------------->    
+                <div id="main-video" class="main-video">
+                    <div class="container"> 
+                        <div class="video-header">
+                            <div class="video">
+                            <p>SEE OUR VIDEO</p>
+                            <a href="#" class="playbutton"><img src="img/PLAY BUTTON.png" alt="Play botton" ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------Portofolio-------------->
+                <div id="main-portfolio" class="main-portfolio">
+                    <div class="container">
+                        <div class="header">
+                            <h1>PORTFOLIO</h1>
+                            <p>SEE OUR BEST WORK SO FAR</p>
+                            <img src="img/portfolio white line.png" alt="seperate line">
+                        </div>
+                        <div class="main-lines">
+                            <p>Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis <br>  
+                            quis ac lectus. Sed porttitor lectus nibh. Proin eget tortor risus. Nulla porttitor accumsan tincidunt. <br> 
+                            Nulla porttitor accumsan tincidunt.</p>
+                        </div>
+                        <div class="button-section">
+                            <div id="myBtnsection" class="myBtnsection">
+                                <button class="btn active" onclick="filterSelection('BRANDING')">BRANDING</button>
+                                <button class="btn" onclick="filterSelection('PHOTOGRAPHY')">PHOTOGRAPHY</button>
+                                <button class="btn" onclick="filterSelection('WEB DESIGN')">WEB DESIGN</button>
+                                <button class="btn" onclick="filterSelection('APP DESIGN')">APP DESIGN</button>
+                            </div>
+                        </div> 
+                        
+                        <div id="photo-section" class="photo-section">
+                            <div class="colum BRANDING">
+                                <img src="img/branding1.jpg" alt="photo1">
+                            </div>
+                            <div class="colum BRANDING">    
+                                <img src="img/branding2.jpg" alt="photo2">
+                            </div>  
+                            <div id="p1" class="colum BRANDING">  
+                                <img src="img/branding3.jpg" alt="photo3">
+                            </div>
+                            <div  class="colum BRANDING">       
+                                <img src="img/branding4.jpg" alt="photo4">
+                            </div>  
+                            <div class="colum BRANDING">   
+                                <img src="img/branding5.jpg" alt="photo5">
+                            </div>
+                            <div class="colum BRANDING">     
+                                <img src="img/branding6.jpg" alt="photo6">
+                            </div>
+                            <div class="colum PHOTOGRAPHY">
+                                <img src="img/photogtraphy1.jpg" alt="Photo">
+                            </div>
+                            <div class="colum PHOTOGRAPHY">
+                                <img src="img/photogtraphy2.jpg" alt="Photo">
+                            </div>
+                            <div class="colum PHOTOGRAPHY">
+                                <img src="img/photogtraphy3.jpg" alt="Photo">
+                            </div>
+                            <div class="colum PHOTOGRAPHY">
+                                <img src="img/photogtraphy4.jpg" alt="Photo">
+                            </div>
+                            <div class="colum PHOTOGRAPHY">
+                                <img src="img/photogtraphy5.jpg" alt="Photo">
+                            </div>
+                            <div class="colum PHOTOGRAPHY">
+                                <img src="img/photogtraphy6.jpg" alt="Photo">
+                            </div>
+                            <div class="colum WEB DESIGN">
+                                <img src="img/webDesign1.png" alt="Photo">
+                            </div>
+                            <div class="colum WEB DESIGN">
+                                <img src="img/webDesign2.png" alt="Photo">
+                            </div>
+                            <div class="colum WEB DESIGN">
+                                <img src="img/webDesign3.png" alt="Photo">
+                            </div>
+                            <div class="colum WEB DESIGN">
+                                <img src="img/webDesign4.jpg" alt="Photo">
+                            </div>
+                            <div class="colum WEB DESIGN">
+                                <img src="img/webDesign5.jpg" alt="Photo">
+                            </div>
+                            <div class="colum WEB DESIGN">
+                                <img src="img/webDesign6.jpg" alt="Photo">
+                            </div>
+                            <div class="colum APP DESIGN">
+                                <img src="img/appDesign1.png" alt="Photo">
+                            </div>
+                            <div class="colum APP DESIGN">
+                                <img src="img/appDesign2.png" alt="Photo">
+                            </div>
+                            <div class="colum APP DESIGN">
+                                <img src="img/appDesign3.jpg" alt="Photo">
+                            </div>
+                            <div class="colum APP DESIGN">
+                                <img src="img/appDesign4.jpg" alt="Photo">
+                            </div>
+                            <div class="colum APP DESIGN">
+                                <img src="img/appDesign5.jpg" alt="Photo">
+                            </div>
+                            <div class="colum APP DESIGN">
+                                <img src="img/appDesign6.jpg" alt="Photo">
+                            </div>
+                        </div>
+        
+                        <div class="end-button">
+                            <button class="See-more-but"><a href="#main-portfolio" class="text">SEE MORE</a></button>
+                        </div>
+                    </div>    
+                </div>
+                 <!-- --------Sec divider bar-------------- -->
+                 <div id="sec-div-bar" class="sec-div-bar">
+                    <div class="content">
+                        <div class="icon">
+                            <img src="img/2dev-cont-pic.png" alt="logo">
+                        </div>
+                
+                        <div class="text">
+                             <p>LOREM IPSUM DOLOR SIT. AD ETIAM SIT ONER<BR> OL DEIAN BOST SIT EMIST.</p>
+                        </div>
+                
+                        <div class="text2">
+                            <P>WILL STEPHENSON</P>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <!-- -------ABOUT US--------------- -->
+                <div id="about-us" class="about-us">
+                    <div class="container">
+                        <div class="header">
+                            <h1>ABOUT US</h1>
+                            <p>WHO WE ARE</p>
+                        </div>
+                        <!-- <div class="div-lin"> -->
+                            <img src="img/about-us-divline.png" alt="line">
+                        <!-- </div> -->
+                        <div class="main-txt">
+                            <p>Donec rutrum congue leo malesuada. Curabitur non nulla sit amet nisl tempus convallis <br>
+                             quis ac lectus. Sed porttitor lectus nibh. Proin eget tortor risus. Nulla porttitor accumsan
+                            tincidunt. <br>Nulla porttitor accumsan tincidunt</p>
+                        </div>
+                        <div class="img-sec">
+                            <div class="img">
+                                <img src="img/aboutUs4.jpg" alt="PIC">
+                                <button>JOHN STEPHENSON</button>
+                            </div>
+                            <div class="img ">
+                                <img src="img/aboutUs1.png" alt="PIC">
+                                <button>JOHN STEPHENSON</button>
+                            </div>
+                            <div class="img">
+                                <img src="img/aboutUs2.png" alt="PIC">
+                                <button>JOHN STEPHENSON</button>
+                            </div>
+                            <div class="img">
+                                <img src="img/aboutUs3.png" alt="PIC">
+                                <button>JOHN STEPHENSON</button>
+                            </div>
+                            
+                            <div class="end-texts">
+                                <div class="text-cont">
+                                    <h1>ABOUT US</h1>
+                                    <p>Donec rutrum congue leo eget malesuada. Curab<br>non nulla sit amet nisl tempus convallis quis ac <br>  
+                                       lectus. Sed porttitor nih. Proin eget tortor risus.<br>Nulla porttitor accumsan tinci dunt. 
+                                       Nulla<br>porttitor</p>
+                                </div>
+                                <div class="text-cont">
+                                    <h1>WHO WE ARE</h1>
+                                    <p>Donec rutrum congue leo eget malesuada. Curab <br> non nulla sit amet nisl tempus convallis quis ac <br>  
+                                        lectus. Sed porttitor nih.</p>
+                                </div>
+
+                                <div id="text-cont" class="text-cont">
+                                    <h1>WHY WE DO THIS</h1>
+                                    <p>Donec rutrum congue leo eget malesuada. Curab <br> non nulla sit amet nisl tempus convallis quis ac <br>  
+                                        lectus. Sed porttitor nih. Proin eget tortor risus.<br> Nulla porttitor accumsan tinci dunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ----------SUBSCRIBE-------------->
+                <div id="subscribe" class="subscribe">
+                    <div class="container">
+                        <div class="content">
+                            <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+                            <form name="emailvalid">
+                                <i class="far fa-envelope setInput"></i>
+                                <input class="write" type="text" id="Email" name="Email" placeholder="EMAIL ADDRESS"> 
+                                <input class="sub" type="submit" value="SUBSCRIBE" onclick="ValidateEmail(document.emailvalid.Email)">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- --------CONTACT-US-------------- -->
+                <div id="contact-us" class="contact-us">
+                    <div class="container">
+                        <div class="head">
+                            <h1>CONTACT US</h1>
+                            <p>WE LOVE TALKING</p>
+                        </div>
+                        <div class="conus-lin">
+                            <img src="img/portfolio white line.png" alt="line">
+                        </div>
+                        <div class="main-text">
+                            <p>Donec rutrum congue leo eget malesuada. Curab non nulla sit amet nisl tempus convallis<br> quis ac   
+                                lectus. Sed porttitor nibh. Proin eget tortor risus.Nulla porttitor accumsan tincidunt.<br>
+                                Nulla porttitor accumsan tincidunt</p>
+                        </div>
+                        <div id="icon-gr" class="icon">
+                            <div class="icons">
+                                <img src="img/comp-icon.png" alt="PC">
+                            </div>
+                            <div class="icons">
+                                <img src="img/home-icon.png" alt="HOME">
+                            </div>
+                            <div class="icons">
+                                <img src="img/phone-icon.png" alt="PHONE">
+                            </div>
+                        </div>
+                        <div class="sub">
+                            <div class="left-side">
+                                <input class="inp" type="text" id="Subjext" name="Subject" placeholder="Subject*"><br>
+                            
+                                <input class="inp" type="name" id="name" name="name" placeholder="Name*"><br>
+
+                                <input class="inp" type="text" id="email" name="email" placeholder="Email*"><br>
+                            </div>
+                            <div class="right-side">
+                                <textarea class="inp" name="message" id="Message" cols="30" rows="10" placeholder="Message..."></textarea>
+                            </div>
+
+                            <a class="more" href="contactUs.html">More options....</a>
+
+                            <div class="submit-icn">
+                                <button type="submit" onclick="ValidateMainPageForm()">SUBMIT</button>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+
+                 <!-- --------Footer-------------- -->
+                 <div id="footer" class="footer">
+                    <div class="container">
+                        <div id="img-footer">
+                            <a href="index.html"> <img class="img" src="img/black-Icon.png" alt="Footer Icon"></a>
+                        </div>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com/" target="_blank"> <img src="img/facebook-icn.png" alt="Facebook"></a>
+                            <a href="https://twitter.com/" target="_blank"> <img src="img/twitter-icn.png" alt="Twitter"></a>
+                            <a href="https://www.nba.com/" target="_blank"> <img src="img/basketBall-icn.png" alt="Basketball"></a>
+                            <a href="https://www.google.com" target="_blank"> <img src="img/googleplus-icn.png" alt="Googleplus"></a>
+                            <a href="https://www.youtube.com" target="_blank"> <img src="img/youtube-icn.png" alt="Youtube"></a>
+                        </div>
+
+                        <div id="end-line" class="end-line">
+                             <p><img src="img/copyright-icn.png" alt="Copyright"> 2014 - Wooster All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>  
+        <script src="js/script.js"></script>         
+    </body>
+</html>
+           
